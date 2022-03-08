@@ -4,11 +4,11 @@ import { ButtonTypes } from '../../types/button'
 
 export const ButtonComponent = styled.button<ButtonTypes>`
   width: ${(props) => (props.size === "small" ? "115px;" : "100%")};
-  height: ${(props) => (props.size === "small" ? "45px;" : "50px")};
+  height : 40px;
   background: ${(props) =>
     props.bg ? (props.active ? "#FCC61A" : "#F7F7F7") : "transparent"};
   margin: ${(props) => (props.margin ? "20px 0" : "0px")};
-  border-radius: 5px;
+  border-radius: 3px;
   outline: none;
   border: none;
   display: flex;
@@ -17,11 +17,10 @@ export const ButtonComponent = styled.button<ButtonTypes>`
   opacity: ${(props) => (props.loading ? "0.8" : '1')};
   color: ${(props) =>
     props.bg
-      ? "#0e0d0a"
+      ? "black"
       : props.active
       ? "#FCC61A"
       : "#FCC61A"};
-  font-family: Inter;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
