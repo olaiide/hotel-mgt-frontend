@@ -5,14 +5,14 @@ export const Container = styled.div`
   min-height:100vh;
   overflow : hidden;
   h2{
-    margin-top : 3rem;
+    font-size : 20px;
   }
 `;
 export const Logo = styled.div`
   color: #2695c9;
   font-weight: 750;
-  font-size: 1.5rem;
-  margin-top : 2rem;
+  font-size: 3rem;
+  margin-top : 5rem;
 `;
 export const FormContainer = styled.div`
     width : 370px;
@@ -20,6 +20,7 @@ export const FormContainer = styled.div`
 `
 export const Text = styled.h3`
  margin : 0 auto;
+
   span {
     color : red;
     cursor : pointer;

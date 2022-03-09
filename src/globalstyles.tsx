@@ -2,12 +2,11 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 .form__container {
     label {
-        display : block;
-          //  font-family: Inter;
-          text-align: start;
-            font-size: 14px;
+            display : block;
+            text-align: start;
+            font-size: 16px;
             font-style: normal;
-            font-weight: 200;
+            font-weight: 500;
             line-height: 26px;
             letter-spacing: 0em;
             padding-bottom : 5px;
@@ -19,11 +18,11 @@ export const GlobalStyle = createGlobalStyle`
             width : 96%;
             border-radius : 3px;
             outline : none;
-            padding-left : 10px;
+            padding-left :7px;
             &::placeholder {
             font-size: 12px;
             font-style: normal;
-            font-weight: 200;
+            font-weight: 400;
             line-height: 22px;
             letter-spacing: 0em;
         }

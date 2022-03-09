@@ -4,7 +4,9 @@ import Button from "../../../components/Button/Button";
 const Login = () => {
   return (
     <Container>
-      {/* <Logo>SK Hotel</Logo> */}
+      {/* <Logo>SK Hotel
+  
+      </Logo> */}
       <h2>SIGN IN TO CONTINUE</h2>
       <FormContainer>
         <div className='form__container'>
