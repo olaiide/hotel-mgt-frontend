@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 import { Container, Logo, FormContainer, Text } from '../Login/LoginElements'
 import Button from "../../../components/Button/Button";
 const Register = () => {
-    
+  const navigate = useNavigate()
   return (
     <Container>
-      {/* <Logo>SK Hotel</Logo> */}
+      <Logo>SK Hotel</Logo>
       <h2>SIGN UP TO CONTINUE</h2>
       <FormContainer>
         <div className='form__container'>
@@ -35,7 +35,7 @@ const Register = () => {
           </div>
         </div>
       </FormContainer>
-      <Text>Already have an account? <span>Sign in</span></Text>
+      <Text>Already have an account? <span  onClick={() => navigate('/login')}>Sign in</span></Text>
     </Container>
   );
 };

@@ -1,12 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Container, Logo, FormContainer, Text } from "./LoginElements";
 import Button from "../../../components/Button/Button";
 const Login = () => {
+  const navigate = useNavigate();
   return (
     <Container>
-      {/* <Logo>SK Hotel
-  
-      </Logo> */}
+      <Logo>SK Hotel</Logo>
       <h2>SIGN IN TO CONTINUE</h2>
       <FormContainer>
         <div className='form__container'>
@@ -31,7 +31,10 @@ const Login = () => {
           </div>
         </div>
       </FormContainer>
-      <Text>Don't have an account? <span>Sign up</span></Text>
+      <Text>
+        Don't have an account?{" "}
+        <span onClick={() => navigate("/register")}>Sign up</span>
+      </Text>
     </Container>
   );
 };
