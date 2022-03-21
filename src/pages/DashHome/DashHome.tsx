@@ -1,9 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Navbar from "../../components/NavBar/NavBar";
 import { Container, Header } from "./DashHomeElements";
-
+// interface Props {
+//   type : string;
+//   price : string;
+//   available : boolean;
+// }
 const DashHome = () => {
+  const Data =  [
+    {
+      type : "Superior room",
+      price : "#40",
+      available : 'jdjjd',
+    }
+  ]
   return (
     <Container>
       <Navbar />
