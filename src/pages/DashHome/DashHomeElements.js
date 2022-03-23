@@ -1,8 +1,13 @@
 import styled from "styled-components";
-import Landing from "../../assets/images/Landing2.jpg";
-export const Container = styled.div`
+import Landing from "../../assets/Landing2.jpg";
+
+export const Container = styled.div` 
+  min-height : 100vh;
+
+`
+export const Wrapper = styled.div`
   background-image: url(${Landing});
-  height: 350px;
+  height: 400px;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -21,3 +26,8 @@ export const Header = styled.div`
       text-align : center;
   }
 `;
+export const RoomGrid = styled.div`
+  
+`
+export const RoomWrapper = styled.div`
+`
