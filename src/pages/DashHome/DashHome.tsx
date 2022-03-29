@@ -85,15 +85,19 @@ const DashHome = () => {
       </Wrapper>
       <RoomGrid>
         {Data.map((item) => (
+          <>
           <RoomWrapper>
             <Image>
-              <img src={item.image} alt='room' width='100%' />
+              <img src={item.image} alt='room' width='100%' style={{borderRadius : "3px"}} />
             </Image>
             <ContentWrapper>
               <div>{item.type}</div>
             </ContentWrapper>
           </RoomWrapper>
+        
+          </>
         ))}
+    
       </RoomGrid>
     </Container>
   );
