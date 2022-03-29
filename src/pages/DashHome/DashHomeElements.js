@@ -39,29 +39,27 @@ export const RoomGrid = styled.div`
   }
 `;
 export const RoomWrapper = styled.div`
-  width: 330px;
-  height: px;
-  border-radius: 0 0 4px 4px;
-  border :;
-  
-/* border-bottom : 1px solid black; */
-/* border-left : 1px solid black; 
-border-right : 1px solid black;  */
+  width: 300px;
 `;
 export const Image = styled.div`
   border-radius : 5px;
-  height : px;
-  display:;
+
 `;
 export const ContentWrapper = styled.div`
    /* border-bottom : 1px solid black;
 border-left : 1px solid black;
 border-right : 1px solid black;
 border : 5px solid black; */
+border: 1px solid #bdbdbd;
+border-radius : 0 0 4px 4px;
   height: 50px;
   padding: 0;
   margin: 0;
-  box-shadow: 0 10px 10px -10px;
-  box-shadow :  5px 5px 10px;
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
+  /* box-shadow: 0 10px 10px -10px;
+  box-shadow :  5px 5px 10px; */
   border-top : none;
+  padding : 10px;
 `;
