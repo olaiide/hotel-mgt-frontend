@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "../../components/NavBar/NavBar";
+import Header from "../../components/Header/Header";
 import {
   Container,
-  Header,
   Wrapper,
   RoomGrid,
   RoomWrapper,
@@ -76,16 +76,9 @@ const DashHome = () => {
   ];
   return (
     <Container>
+      <Navbar />
       <Wrapper>
-        <Navbar />
-        <Header>
-          <div>
-            <h1>MAKE YOURSELF</h1>
-            <h1>AT HOME.</h1>
-            {/* <h3>Search through array of rooms we've prepared for you.</h3> */}
-            <h6>SIMPLE - UNIQUE - FRIENDLY</h6>
-          </div>
-        </Header>
+        <Header/>
       </Wrapper>
       <RoomGrid>
         {Data.map((item) => (
