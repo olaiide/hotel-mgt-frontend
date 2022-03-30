@@ -12,35 +12,23 @@ export const Wrapper = styled.div`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  overflow: ;
+  overflow: hidden;
+`;
 
-`;
-export const Header = styled.div`
-  color: white;
-  font-weight: 600;
-  font-size: 1.9rem;
-  font-family : Poppins;
- 
-  height : 100%;
-  div {
-   text-align: center;
-  }
-`;
 export const RoomGrid = styled.div`
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 0.1fr);
   grid-template-columns: repeat(auto-fit, minmax(330px, 0.1fr));
   grid-gap: 30px;
-  margin: 0 auto;
-  margin-top: 1rem;
+  margin-top : 2rem;
   @media screen and (min-width: 1200px) {
     grid-template-columns: repeat(3, 0.1fr);
   }
 `;
 export const RoomWrapper = styled.div`
   width: 300px;
-  box-shadow: 0 1px 4px 0 rgba(177,179,179,0.3) !important;
+  box-shadow: 0 1px 4px 0 rgba(177, 179, 179, 0.3) !important;
 `;
 export const Image = styled.div`
   border-top-left-radius: 5px;
@@ -53,20 +41,12 @@ export const Img = styled.img`
   width: 100%;
 `;
 export const ContentWrapper = styled.div`
-  /* border-bottom : 1px solid black;
-border-left : 1px solid black;
-border-right : 1px solid black;
-border : 5px solid black; */
   border: 1px solid #bdbdbd;
   border-radius: 0 0 4px 4px;
   height: 50px;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* box-shadow: 0 10px 10px -10px;
-  box-shadow :  5px 5px 10px; */
   border-top: none;
   padding: 10px;
 `;
