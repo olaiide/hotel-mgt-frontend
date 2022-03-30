@@ -7,9 +7,11 @@ import {
   RoomGrid,
   RoomWrapper,
   ContentWrapper,
+  Img,
   Image,
 } from "./DashHomeElements";
 import Room from "../../assets/room1.jpg";
+// import Button from "../../components/Button/ButtonElements";
 // interface Props {
 //   type : string;
 //   price : string;
@@ -78,8 +80,10 @@ const DashHome = () => {
         <Navbar />
         <Header>
           <div>
-            <h2>Find and book rooms.</h2>
-            <h3>Search through array of rooms we've prepared for you.</h3>
+            <h1>MAKE YOURSELF</h1>
+            <h1>AT HOME.</h1>
+            {/* <h3>Search through array of rooms we've prepared for you.</h3> */}
+            <h6>SIMPLE - UNIQUE - FRIENDLY</h6>
           </div>
         </Header>
       </Wrapper>
@@ -88,19 +92,11 @@ const DashHome = () => {
           <>
             <RoomWrapper>
               <Image>
-                <img
-                  src={item.image}
-                  alt='room'
-                  width='100%'
-                  style={{
-                    borderRadius: "3px",
-                    overflowY: "hidden",
-                    marginBottom: "-5px",
-                  }}
-                />
+                <Img src={item.image} alt='room_image' />
               </Image>
               <ContentWrapper>
                 <div>{item.type}</div>
+                {/* <Button children={'View room'} /> */}
               </ContentWrapper>
             </RoomWrapper>
           </>
