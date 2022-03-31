@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/NavBar/NavBar";
 import Header from "../../components/Header/Header";
+import Button from "../../components/Button/Button";
 import {
   Container,
   Wrapper,
@@ -79,9 +80,10 @@ const DashHome = () => {
     <Container>
       <Navbar />
       <Wrapper>
-        <Header/>
+        <Header />
       </Wrapper>
       <Overview />
+      <h1 style={{ textAlign: "center" }}>Today's Top Rooms</h1>
       <RoomGrid>
         {Data.map((item) => (
           <>
@@ -91,7 +93,16 @@ const DashHome = () => {
               </Image>
               <ContentWrapper>
                 <div>{item.type}</div>
-                {/* <Button children={'View room'} /> */}
+                <Button
+                  children={"View room"}
+                  active={true}
+                  margin={false}
+                  bg={true}
+                  size={"small"}
+                  loading={false}
+                  background={'#47543f'}
+                  disabled
+                />
               </ContentWrapper>
             </RoomWrapper>
           </>

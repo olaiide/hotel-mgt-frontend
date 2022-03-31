@@ -12,6 +12,7 @@ const Button: FC<ButtonTypes> = (props) => {
         margin={props.margin}
         loading={props.loading}
         disabled={props.disabled}
+        background={props.background}
       >
         {props.loading ? <span className='spinner'></span> : props.children}
       </ButtonComponent>

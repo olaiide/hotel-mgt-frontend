@@ -6,7 +6,8 @@ export const ButtonComponent = styled.button<ButtonTypes>`
   width: ${(props) => (props.size === "small" ? "115px;" : "100%")};
   height : 40px;
   background: ${(props) =>
-    props.bg ? (props.active ? "#FCC61A" : "#F7F7F7") : "transparent"};
+    props.bg ? (props.active ? props.background : "#F7F7F7") : "transparent"};
+
   margin: ${(props) => (props.margin ? "20px 0" : "0px")};
   border-radius: 3px;
   outline: none;
@@ -21,7 +22,7 @@ export const ButtonComponent = styled.button<ButtonTypes>`
       : props.active
       ? "#FCC61A"
       : "#FCC61A"};
-  font-size: 15px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 22px;

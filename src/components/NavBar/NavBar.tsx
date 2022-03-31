@@ -23,6 +23,7 @@ const Header = () => {
               loading={false}
               margin={false}
               disabled={false}
+              
             />
           </StyledLink>
           <StyledLink to={'/register'}>
@@ -33,7 +34,9 @@ const Header = () => {
               active={true}
               loading={false}
               margin={false}
-              disabled={false}
+              disabled={false} 
+              background={'#FCC61A'}
+              
             />
           </StyledLink>
         </ButtonContainer>
