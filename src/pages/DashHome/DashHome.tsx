@@ -11,6 +11,7 @@ import {
   Image,
 } from "./DashHomeElements";
 import Room from "../../assets/room1.jpg";
+import Overview from "../../components/Overview/Overview";
 // import Button from "../../components/Button/ButtonElements";
 // interface Props {
 //   type : string;
@@ -80,6 +81,7 @@ const DashHome = () => {
       <Wrapper>
         <Header/>
       </Wrapper>
+      <Overview />
       <RoomGrid>
         {Data.map((item) => (
           <>
