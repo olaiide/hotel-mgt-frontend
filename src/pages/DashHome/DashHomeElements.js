@@ -43,7 +43,7 @@ export const Img = styled.img`
 export const ContentWrapper = styled.div`
   border: 1px solid #bdbdbd;
   border-radius: 0 0 4px 4px;
-  height: 50px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;

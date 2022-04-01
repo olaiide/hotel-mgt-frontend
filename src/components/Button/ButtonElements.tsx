@@ -1,12 +1,18 @@
 import styled, { keyframes } from "styled-components";
 import { pulse } from "react-animations";
-import { ButtonTypes } from '../../types/button'
+import { ButtonTypes } from "../../types/button";
 
 export const ButtonComponent = styled.button<ButtonTypes>`
-  width: ${(props) => (props.size === "small" ? "115px;" : "100%")};
-  height : 40px;
+  width: ${(props) => (props.size === "small" ? "105px;" : "100%")};
+  height: 38px;
   background: ${(props) =>
-    props.bg ? (props.active ? props.background : "#F7F7F7") : "transparent"};
+    props.bg
+      ? props.active
+        ? props.background
+          ? "#47543F"
+          : "#FCC61A"
+        : "#F7F7F7"
+      : "transparent"};
 
   margin: ${(props) => (props.margin ? "20px 0" : "0px")};
   border-radius: 3px;
@@ -15,30 +21,23 @@ export const ButtonComponent = styled.button<ButtonTypes>`
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: ${(props) => (props.loading ? "0.8" : '1')};
+  opacity: ${(props) => (props.loading ? "0.8" : "1")};
   color: ${(props) =>
     props.bg
-      ? "black"
-      : props.active
-      ? "#FCC61A"
+      ? props.active
+        ? props.background
+          ? "#FFF"
+          : "black"
+        : "black"
       : "#FCC61A"};
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
   letter-spacing: 0em;
-  cursor : pointer;
+  cursor: pointer;
   &:hover {
-    /* color: ${(props) =>
-      props.bg ? "#FCC61A" : ""}; */
-    background: ${(props) =>
-      props.bg
-        ? props.active
-          ? ""
-          : "#FCC61A"
-        : "transparent"};
     animation: 0.5s ${keyframes(pulse)};
-
   }
 
   .spinner {
@@ -58,4 +57,3 @@ export const ButtonComponent = styled.button<ButtonTypes>`
     }
   }
 `;
-

@@ -5,5 +5,5 @@ export interface ButtonTypes {
     margin?: boolean,
     loading : boolean,
     disabled : boolean,
-    background? : string;
+    background? : boolean;
 }

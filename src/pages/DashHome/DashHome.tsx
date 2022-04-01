@@ -96,11 +96,11 @@ const DashHome = () => {
                 <Button
                   children={"View room"}
                   active={true}
-                  margin={false}
+                  margin={true}
                   bg={true}
                   size={"small"}
                   loading={false}
-                  background={'#47543f'}
+                  background={true}
                   disabled
                 />
               </ContentWrapper>

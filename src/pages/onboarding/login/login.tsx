@@ -21,7 +21,7 @@ const Login = () => {
           <div>
             <Button
               children={"Log in"}
-              active={true}
+              active={false}
               margin={true}
               loading={false}
               bg={true}

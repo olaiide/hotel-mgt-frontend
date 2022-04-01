@@ -21,9 +21,7 @@ const Header = () => {
               size={"small"}
               active={true}
               loading={false}
-              margin={false}
-              disabled={false}
-              
+              disabled={false}  
             />
           </StyledLink>
           <StyledLink to={'/register'}>
@@ -33,10 +31,8 @@ const Header = () => {
               size={"small"}
               active={true}
               loading={false}
-              margin={false}
               disabled={false} 
-              background={'#FCC61A'}
-              
+              background={false}
             />
           </StyledLink>
         </ButtonContainer>
